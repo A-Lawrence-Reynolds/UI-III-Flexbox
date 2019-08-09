@@ -116,6 +116,7 @@ ul {
 	list-style: none;
 }
 
+
 blockquote,
 q {
 	quotes: none;
@@ -157,12 +158,11 @@ h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-
-.body-div-container {
-	margin: 10px;
-	border: 40px 10px;
-	padding: 10px;
+.parent-div {
+	width: 975px;
+	margin: auto;
 }
+
 
 .bottom-bordered-header {
 	border-bottom: 3px solid lightslategray;
@@ -215,6 +215,11 @@ h5 {
 	justify-content: center;
 	display: flex;
 	align-items: center;
+	flex-direction: column;
+	font-size: 60px;
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
 }
 
 .button {
@@ -222,16 +227,19 @@ h5 {
 	background-color: white;
 	color: black;
 	border: 1px black solid;
-	width: 50%;
+	width: 25%;
 	justify-content: center;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	font-size: 25px;
+	padding-top: 7%;
+	align-items: center
 }
 
 
 .middle-img {
 	display: flex;
 	width: 100%;
+	margin: auto;
 }
 
 div p {
@@ -243,6 +251,7 @@ div p {
 	/* width: 49%; */
 	flex-wrap: wrap;
 	justify-content: space-around;
+	padding: 4%;
 }
 
 .features {
@@ -250,6 +259,7 @@ div p {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	padding: 2%;
 }
 
 .about {
@@ -257,6 +267,7 @@ div p {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	padding: 2%;
 
 }
 
@@ -264,6 +275,9 @@ div p {
 	display: flex;
 	justify-content: center;
 	flex: 1;
+	padding: 4%;
+
+
 }
 
 .services {
@@ -271,6 +285,8 @@ div p {
 	width: 32%;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
+	padding: 2%;
 }
 
 .product {
@@ -278,6 +294,8 @@ div p {
 	width: 32%;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
+	padding: 2%;
 }
 
 .vision {
@@ -285,23 +303,29 @@ div p {
 	justify-content: center;
 	width: 32%;
 	align-items: center;
+	flex-direction: column;
+	padding: 2%;
 }
 
 
 .footer {
 	display: flex;
+	flex-direction: column;
 
 }
 
-.footer div p {
-	display: flex;
 
-}
 
 .footer-container {
 	display: flex;
 	width: 100%;
+	flex-direction: column;
+}
 
+.footer-info {
+	display: flex;
+	justify-content: center;
+	flex-direction: column
 }
 
 .copyright {
